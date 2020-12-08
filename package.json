@@ -2,9 +2,13 @@
   "name": "catalan-hours",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint",
+    "doc": "jsdoc src -c src/* -d documentation",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch --coverage",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,15 @@
   "bugs": {
     "url": "https://github.com/mgm793/catalan-hours/issues"
   },
-  "homepage": "https://github.com/mgm793/catalan-hours#readme"
+  "homepage": "https://github.com/mgm793/catalan-hours#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@rollup/plugin-babel": "^5.2.2",
+    "eslint": "^7.15.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^26.6.3",
+    "jsdoc": "^3.6.6",
+    "rollup": "^2.34.2"
+  }
 }
