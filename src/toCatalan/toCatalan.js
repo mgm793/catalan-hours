@@ -2,21 +2,15 @@ import {getHourArticle} from '../getHourArticle/getHourArticle';
 import {FRACTIONS, HOURS, NUMBERS} from '../constants';
 import {getHourPrep} from '../getHourPrep';
 import {changeTo12hoursFormat} from '../changeTo12hoursFormat';
-
-/**
- * @typedef ExtractedDate
- * @type {object}
- * @property {number} hours
- * @property {number} minutes
- * @property {number} seconds
- */
+import {transformDate} from '../transformDate';
 
 /**
  *
- * @param {ExtractedDate} date
+ * @param {Date} date
  * @return {string}
  */
-export function toCatalan({minutes, hours}) {
+export function toCatalan(date) {
+  const {minutes, hours} = transformDate(date);
   if (!minutes) {
     const hour = changeTo12hoursFormat(hours);
     return `${getHourArticle(hour)} ${HOURS[hour]} ${FRACTIONS.PUNT}`;
