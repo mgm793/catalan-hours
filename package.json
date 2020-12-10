@@ -1,8 +1,8 @@
 {
-  "name": "catalan-hours",
+  "name": "catalan-hour",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "description": "This library provides a function called toCatalan that transform JS Date to catalan date",
+  "main": "dist/index.js",
   "scripts": {
     "eslint": "eslint",
     "doc": "jsdoc src -c src/* -d documentation",
@@ -33,6 +33,7 @@
     "eslint-config-google": "^0.14.0",
     "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
-    "rollup": "^2.34.2"
+    "rollup": "^2.34.2",
+    "rollup-plugin-local-resolve": "^1.0.7"
   }
 }

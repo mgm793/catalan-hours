@@ -7,7 +7,6 @@ describe('transformDate', () => {
     expect(transformetDate).toEqual({
       hours: 3,
       minutes: 24,
-      seconds: 10,
     });
   });
 });

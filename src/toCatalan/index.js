@@ -1,2 +1,1 @@
-
 export {toCatalan} from './toCatalan';

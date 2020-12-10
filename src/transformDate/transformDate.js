@@ -3,7 +3,6 @@
  * @type {object}
  * @property {number} hours
  * @property {number} minutes
- * @property {number} seconds
  */
 
 /**
@@ -14,6 +13,5 @@ export function transformDate(date) {
   return {
     hours: date.getHours(),
     minutes: date.getMinutes(),
-    seconds: date.getSeconds(),
   };
 }

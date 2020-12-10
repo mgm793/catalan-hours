@@ -1,10 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607455394051" clover="3.2.0">
-  <project timestamp="1607455394051" name="All files">
-    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="2" coveredelements="2" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
-    <file name="transformDate.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/transformDate/transformDate.js">
+<coverage generated="1607618733543" clover="3.2.0">
+  <project timestamp="1607618733543" name="All files">
+    <metrics statements="26" coveredstatements="26" conditionals="24" coveredconditionals="24" methods="5" coveredmethods="5" elements="55" coveredelements="55" complexity="0" loc="26" ncloc="26" packages="6" files="11" classes="11"/>
+    <package name="changeTo12hoursFormat">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="changeTo12hoursFormat.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/changeTo12hoursFormat/changeTo12hoursFormat.js">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="27" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="index.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/changeTo12hoursFormat/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="fractions.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/constants/fractions.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="hours.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/constants/hours.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/constants/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="numbers.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/constants/numbers.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="getHourArticle">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="getHourArticle.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/getHourArticle/getHourArticle.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="getHourPrep">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="getHourPrep.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/getHourPrep/getHourPrep.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="17" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/getHourPrep/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="toCatalan">
+      <metrics statements="17" coveredstatements="17" conditionals="18" coveredconditionals="18" methods="1" coveredmethods="1"/>
+      <file name="toCatalan.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/toCatalan/toCatalan.js">
+        <metrics statements="17" coveredstatements="17" conditionals="18" coveredconditionals="18" methods="1" coveredmethods="1"/>
+        <line num="20" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="27" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="29" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="44" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="transformDate">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="14" count="1" type="stmt"/>
-    </file>
+      <file name="transformDate.js" path="/Users/mgm793/Documents/npmProjects/catalan-hours/src/transformDate/transformDate.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
