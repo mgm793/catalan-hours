@@ -63,18 +63,29 @@ function changeTo12hoursFormat(hour) {
  * @type {object}
  * @property {number} hours
  * @property {number} minutes
- * @property {number} seconds
  */
 
 /**
+ * @param {Date} date
+ * @return {ExtractedDate}
+ */
+function transformDate(date) {
+  return {
+    hours: date.getHours(),
+    minutes: date.getMinutes()
+  };
+}
+
+/**
  *
- * @param {ExtractedDate} date
+ * @param {Date} date
  * @return {string}
  */
 
-function toCatalan(_ref) {
-  var minutes = _ref.minutes,
-      hours = _ref.hours;
+function toCatalan(date) {
+  var _transformDate = transformDate(date),
+      minutes = _transformDate.minutes,
+      hours = _transformDate.hours;
 
   if (!minutes) {
     var hour = changeTo12hoursFormat(hours);
