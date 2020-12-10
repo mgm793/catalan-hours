@@ -1,6 +1,6 @@
 {
   "name": "catalan-hour",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library provides a function called toCatalan that transform JS Date to catalan date",
   "main": "dist/index.js",
   "scripts": {
